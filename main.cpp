@@ -59,9 +59,12 @@ int main(){
     fraction result2=~fract2;
     std::cout << result2;
 
-    // fraction result3=++fract1;
-    // std::cout << result3;
+    //Возведение в степень
+    fraction result3=fract1^3;
+    std::cout << result3;
 
+    fraction result4=fract2^5;
+    std::cout << result4;
 
     return 0;
 }
