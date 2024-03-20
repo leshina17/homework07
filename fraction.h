@@ -21,66 +21,42 @@ public:
 bool operator< (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num>=new_num1){
-        return false;
-    }
-    else  
-        return true;
+    return (new_num>=new_num1);
 }
 
 //Операция меньше или равно
 bool operator<= (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num>new_num1){
-        return false;
-    }
-    else  
-        return true;
+    return (new_num>new_num1);
 }
 
 //Операция больше
 bool operator> (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num<=new_num1){
-        return false;
-    }
-    else 
-        return true;
+    return (new_num<=new_num1);
 }
 
 //Операция больше или равно
 bool operator>= (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num<new_num1){
-        return false;
-    }
-    else 
-        return true;
+    return (new_num<new_num1);
 }
 
 //Сравнение дробей (равенство)
 bool operator== (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num!=new_num1){
-        return false;
-    }
-    else
-        return true;
+    return (new_num!=new_num1);
 }
 
 //Сравнение дробей (неравенство)
 bool operator!= (const fraction& fract) const{
     int32_t new_num=_num*fract._denom;
     int32_t new_num1=fract._num*_denom;
-    if (new_num==new_num1){
-        return false;
-    }
-    else    
-        return true;
+    return (new_num==new_num1);
 }
 
 
